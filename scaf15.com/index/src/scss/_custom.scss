@@ -1,0 +1,76 @@
+/*
+ * Copyright (c) 2019 by Marfeel Solutions (http://www.marfeel.com)
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Marfeel Solutions S.L and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Marfeel Solutions S.L and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Marfeel Solutions SL.
+ */
+
+$main-color: var(--mc);
+$secondary-color: var(--sc);
+
+@include lateralMenu_customStyles (
+    $bgColor: null,
+    $textColor: null,
+    $iconsColor: null,
+    $currentSectionColor: null,
+    $border: true,
+    $borderColor: null,
+    $subSectionBg: null,
+    $subSectionBorderColor: null,
+    $subSectionCurrentColor: null,
+    $subSectionCurrentBgColor: null,
+    $subSectionColor: null,
+    $thirdLevelBgColor: null,
+    $thirdLevelCurrentColor: null,
+    $thirdLevelCurrentBgColor: null,
+    $thirdLevelColor: null,
+    $headerBgColor: null,
+    $footerBgColor: null,
+    $externalBgColor: null,
+    $externalTextColor: null);
+
+@include customSectionPreview(
+    $titleFontSize: null,
+    $titleFontFamily: null,
+    $titleTextTransform:null,
+    $titleTextColor: null,
+    $separatorColor: null,
+    $titleCentered: null,
+    $separatorHeight: null,
+    $separatorPositionTop: null,
+    $padding: null,
+    $titleBgColor: null,
+    $headerBackground: null,
+    $hasBorder: false,
+    $marginHeader: null,
+    $borderTop: null,
+    $borderBottom: null,
+    $borderLeft: null,
+    $borderRight: null,
+    $borderAll: null,
+    $borderImage: null);
+
+@include customFooter(
+    $fontLinks: $secondaryFont,
+    $textTransform: null,
+    $backgroundColor: null,
+    $topMargin: null,
+    $linksColor: $secondary-color,
+    $textColor: $mainTextColor,
+    $imageWidth: 120px,
+    $linkDisplay: block);
+
+@include articleDetailLinks($secondary-color);
+.mrf-detailsContent {
+    .mrf-title { @include articleTitle(); }
+    .mrf-dateDetails { @include articleDetailDate(); }
+    .mrf-authorDetails { @include articleDetailAuthor(); }
+    .mrf-caption { @include articleDetailCaption(); }
+}
