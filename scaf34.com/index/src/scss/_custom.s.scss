@@ -1,0 +1,50 @@
+/*
+ * Copyright (c) 2019 by Marfeel Solutions (http://www.marfeel.com)
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Marfeel Solutions S.L and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Marfeel Solutions S.L and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Marfeel Solutions SL.
+ */
+
+@include customLayout(
+    $layoutName: null,
+    $letterSpacing: null,
+    $titleSize: null,
+    $titleFontFamily: null,
+    $titleLineHeight: null,
+    $titleColor: null,
+    $subtitleSize: null,
+    $excerptSize: null,
+    $filletable: true,
+    $filletStyle: null,
+    $subtitleColor: null,
+    $photoHeight: null);
+
+@include customBalcon(
+    $specificBalcon: null,
+    $titleFontSize: null,
+    $titleFontFamily: null,
+    $titleTextTransform: null,
+    $titleTextColor: null,
+    $separatorColor: null,
+    $titleCentered: null,
+    $balconBackground: null,
+    $headerBackground: null,
+    $titleBgColor: null,
+    $padding: null,
+    $marginHeader: 1rem 15px .5rem,
+    $hasBorder: false,
+    $borderTop: null,
+    $borderBottom: null,
+    $borderLeft: null,
+    $borderRight: null,
+    $borderAll: null,
+    $borderImage: null,
+    $separatorHeight: null,
+    $separatorPositionTop: null);
